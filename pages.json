@@ -1,16 +1,57 @@
 {
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
 		{
+			"path": "pages/rank/rank",
+			"style": {
+				"navigationBarTitleText": "排行"
+			}
+		},
+		{
+			"path": "pages/person/person",
+			"style": {
+				"navigationBarTitleText": "个人"
+			}
+		},
+		{
 			"path": "pages/index/index",
 			"style": {
-				"navigationBarTitleText": "uni-app"
+				"navigationBarTitleText": "index"
+			}
+		},
+		{
+			"path": "pages/trade/trade",
+			"style": {
+				"navigationBarTitleText": "交易"
 			}
 		}
 	],
+	"tabBar": {
+		"color": "#222",
+		"selectedColor": "#dcb736",
+		"borderStyle": "black",
+		"backgroundColor": "darkgrey",
+		"list": [{
+			"pagePath": "pages/rank/rank",
+			"iconPath": "static/icons/rank.png",
+			"selectedIconPath": "static/icons/rank-gold.png",
+			"text": "排行"
+		}, {
+			"pagePath": "pages/trade/trade",
+			"iconPath": "static/icons/trade-black.png",
+			"selectedIconPath": "static/icons/trade-gold.png",
+			"text": "交易"
+		}, {
+			"pagePath": "pages/person/person",
+			"iconPath": "static/icons/person.png",
+			"selectedIconPath": "static/icons/person-gold.png",
+			"text": "个人"
+		}]
+	},
+
 	"globalStyle": {
-		"navigationBarTextStyle": "black",
+		"navigationBarTextStyle": "white",
 		"navigationBarTitleText": "uni-app",
-		"navigationBarBackgroundColor": "#F8F8F8",
-		"backgroundColor": "#F8F8F8"
+		"navigationBarBackgroundColor": "#222",
+		"backgroundColor": "#222"
 	}
 }
