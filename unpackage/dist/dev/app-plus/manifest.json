@@ -11,7 +11,7 @@
     "code": "100"
   },
   "description": "",
-  "launch_path": "__uniappview.html",
+  "launch_path": "__uniapptabbar.html",
   "developer": {
     "name": "",
     "email": "",
@@ -35,14 +35,12 @@
     },
     "popGesture": "close",
     "launchwebview": {
-      "render": "always",
-      "id": "1",
-      "kernel": "WKWebview"
+      "render": "always"
     },
     "statusbar": {
       "immersed": "supportedDevice",
-      "style": "dark",
-      "background": "#F8F8F8"
+      "style": "light",
+      "background": "#222"
     },
     "usingComponents": true,
     "distribute": {
@@ -82,10 +80,24 @@
       }
     },
     "allowsInlineMediaPlayback": true,
+    "safearea": {
+      "background": "darkgrey",
+      "bottom": {
+        "offset": "auto"
+      }
+    },
     "uni-app": {
       "compilerVersion": "2.0.0",
       "control": "v8",
       "nvueCompiler": "weex"
+    },
+    "secondwebview": {
+      "id": "1",
+      "launch_path": "__uniappview.html",
+      "kernel": "WKWebview",
+      "mode": "child",
+      "top": 0,
+      "bottom": 56
     }
   }
 }

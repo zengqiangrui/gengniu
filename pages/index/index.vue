@@ -4,6 +4,7 @@
 		<view>
 			<text class="title">{{title}}</text>
 		</view>
+		
 	</view>
 </template>
 
@@ -11,14 +12,16 @@
 	export default {
 		data() {
 			return {
-				title: 'Hello'
+				title: 'HelloWorld'
 			}
 		},
 		onLoad() {
 
 		},
 		methods: {
-
+			show(){
+				
+			}
 		}
 	}
 </script>

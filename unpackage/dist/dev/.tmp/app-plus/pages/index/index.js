@@ -17,17 +17,21 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 //
 //
 //
+//
 var _default =
 {
   data: function data() {
     return {
-      title: 'Hello' };
+      title: 'HelloWorld' };
 
   },
   onLoad: function onLoad() {
 
   },
-  methods: {} };exports.default = _default;
+  methods: {
+    show: function show() {
+
+    } } };exports.default = _default;
 
 /***/ }),
 
