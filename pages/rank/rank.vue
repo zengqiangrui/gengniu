@@ -4,7 +4,9 @@
 			<view class="content">
 				<view class="bangdan">总收益榜</view>
 				<view class="bangdanOne">月收益榜</view>
-				<view class="bangdanTwo">周收益榜</view>
+				<view class="bangdanTwo">周收益榜<picker :mode="multiSelector" range="array"  @change="changePicker">
+					<view>picker组件</view>
+				</picker></view>
 			</view>
 			<!--</view>-->
 			<view id="niu">
@@ -47,6 +49,8 @@
 	export default {
 		data() {
 			return {
+				duration:["年","季","月","周"],
+				array:[["a","b"], ["c","d"]],
 				sites: [{
 							name: '股琴A',
 							jianjie: '曾获世界影响华人大奖牛逼哔哔哔哔哔哔哔哔哔哔',
@@ -103,7 +107,9 @@
 
 		},
 		methods: {
-
+			changePicker:res=>{
+				console.log()
+			}
 		}
 	}
 	
@@ -120,7 +126,7 @@
 	display: flex;
 	flex-flow: row;
 	position: fixed;
-	top: 44px;
+	top: 0px;
 
 }
 .topcontext{
@@ -169,7 +175,7 @@
 	flex-flow: column;
 }
 #niu{
-	margin-top: 70px;
+	margin-top: 40px;
 }
 
 .niuren {
