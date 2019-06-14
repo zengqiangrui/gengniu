@@ -1,9 +1,11 @@
 {
   "pages": [
+    "pages/login/register/register",
+    "pages/login/login/login",
+    "pages/trade/trade",
     "pages/rank/rank",
     "pages/person/person",
     "pages/index/index",
-    "pages/trade/trade",
     "pages/trade/handleTrade/handleTrade"
   ],
   "subPackages": [],

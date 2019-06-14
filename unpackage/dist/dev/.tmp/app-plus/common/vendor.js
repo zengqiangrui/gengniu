@@ -7319,6 +7319,40 @@ createPage(_index.default);
 
 /***/ }),
 
+/***/ "C:\\Users\\Administrator\\Documents\\HBuilderProjects\\gengniu\\main.js?{\"page\":\"pages%2Flogin%2Flogin%2Flogin\"}":
+/*!******************************************************************************************************************!*\
+  !*** C:/Users/Administrator/Documents/HBuilderProjects/gengniu/main.js?{"page":"pages%2Flogin%2Flogin%2Flogin"} ***!
+  \******************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ "C:\\Users\\Administrator\\Documents\\HBuilderProjects\\gengniu\\pages.json");
+
+var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ "./node_modules/@dcloudio/vue-cli-plugin-uni/packages/mp-vue/dist/mp.runtime.esm.js"));
+var _login = _interopRequireDefault(__webpack_require__(/*! ./pages/login/login/login.vue */ "C:\\Users\\Administrator\\Documents\\HBuilderProjects\\gengniu\\pages\\login\\login\\login.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+createPage(_login.default);
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-app-plus/dist/index.js */ "./node_modules/@dcloudio/uni-app-plus/dist/index.js")["createPage"]))
+
+/***/ }),
+
+/***/ "C:\\Users\\Administrator\\Documents\\HBuilderProjects\\gengniu\\main.js?{\"page\":\"pages%2Flogin%2Fregister%2Fregister\"}":
+/*!************************************************************************************************************************!*\
+  !*** C:/Users/Administrator/Documents/HBuilderProjects/gengniu/main.js?{"page":"pages%2Flogin%2Fregister%2Fregister"} ***!
+  \************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ "C:\\Users\\Administrator\\Documents\\HBuilderProjects\\gengniu\\pages.json");
+
+var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ "./node_modules/@dcloudio/vue-cli-plugin-uni/packages/mp-vue/dist/mp.runtime.esm.js"));
+var _register = _interopRequireDefault(__webpack_require__(/*! ./pages/login/register/register.vue */ "C:\\Users\\Administrator\\Documents\\HBuilderProjects\\gengniu\\pages\\login\\register\\register.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+createPage(_register.default);
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-app-plus/dist/index.js */ "./node_modules/@dcloudio/uni-app-plus/dist/index.js")["createPage"]))
+
+/***/ }),
+
 /***/ "C:\\Users\\Administrator\\Documents\\HBuilderProjects\\gengniu\\main.js?{\"page\":\"pages%2Fperson%2Fperson\"}":
 /*!************************************************************************************************************!*\
   !*** C:/Users/Administrator/Documents/HBuilderProjects/gengniu/main.js?{"page":"pages%2Fperson%2Fperson"} ***!
