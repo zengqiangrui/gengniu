@@ -5,9 +5,93 @@
   !*** ./node_modules/babel-loader/lib!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--12-1!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/script.js!./node_modules/vue-loader/lib??vue-loader-options!C:/Users/Administrator/Documents/HBuilderProjects/gengniu/pages/trade/trade.vue?vue&type=script&lang=js& ***!
   \*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-throw new Error("Module build failed (from ./node_modules/@dcloudio/webpack-uni-mp-loader/lib/script.js):\nError: Can't resolve '/gengniu/node_modules/@dcloudio/uni-ui/lib/uni-icon/uni-icon.vue' in 'C:\\Users\\Administrator\\Documents\\HBuilderProjects\\gengniu\\pages\\trade'\n    at doResolve (D:\\HBuilderX\\plugins\\uniapp-cli\\node_modules\\enhanced-resolve\\lib\\Resolver.js:180:19)\n    at hook.callAsync (D:\\HBuilderX\\plugins\\uniapp-cli\\node_modules\\enhanced-resolve\\lib\\Resolver.js:238:5)\n    at _fn0 (eval at create (D:\\HBuilderX\\plugins\\uniapp-cli\\node_modules\\tapable\\lib\\HookCodeFactory.js:32:10), <anonymous>:15:1)\n    at resolver.doResolve (D:\\HBuilderX\\plugins\\uniapp-cli\\node_modules\\enhanced-resolve\\lib\\UnsafeCachePlugin.js:37:5)\n    at hook.callAsync (D:\\HBuilderX\\plugins\\uniapp-cli\\node_modules\\enhanced-resolve\\lib\\Resolver.js:238:5)\n    at _fn0 (eval at create (D:\\HBuilderX\\plugins\\uniapp-cli\\node_modules\\tapable\\lib\\HookCodeFactory.js:32:10), <anonymous>:15:1)\n    at hook.callAsync (D:\\HBuilderX\\plugins\\uniapp-cli\\node_modules\\enhanced-resolve\\lib\\Resolver.js:238:5)\n    at _fn0 (eval at create (D:\\HBuilderX\\plugins\\uniapp-cli\\node_modules\\tapable\\lib\\HookCodeFactory.js:32:10), <anonymous>:12:1)\n    at resolver.doResolve (D:\\HBuilderX\\plugins\\uniapp-cli\\node_modules\\enhanced-resolve\\lib\\DescriptionFilePlugin.js:42:38)\n    at hook.callAsync (D:\\HBuilderX\\plugins\\uniapp-cli\\node_modules\\enhanced-resolve\\lib\\Resolver.js:238:5)\n    at _fn43 (eval at create (D:\\HBuilderX\\plugins\\uniapp-cli\\node_modules\\tapable\\lib\\HookCodeFactory.js:32:10), <anonymous>:402:1)\n    at hook.callAsync (D:\\HBuilderX\\plugins\\uniapp-cli\\node_modules\\enhanced-resolve\\lib\\Resolver.js:238:5)\n    at _fn1 (eval at create (D:\\HBuilderX\\plugins\\uniapp-cli\\node_modules\\tapable\\lib\\HookCodeFactory.js:32:10), <anonymous>:24:1)\n    at hook.callAsync (D:\\HBuilderX\\plugins\\uniapp-cli\\node_modules\\enhanced-resolve\\lib\\Resolver.js:238:5)\n    at _fn1 (eval at create (D:\\HBuilderX\\plugins\\uniapp-cli\\node_modules\\tapable\\lib\\HookCodeFactory.js:32:10), <anonymous>:24:1)\n    at hook.callAsync (D:\\HBuilderX\\plugins\\uniapp-cli\\node_modules\\enhanced-resolve\\lib\\Resolver.js:238:5)");
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var uniIcon = function uniIcon() {return __webpack_require__.e(/*! import() | node-modules/@dcloudio/uni-ui/lib/uni-icon/uni-icon */ "node-modules/@dcloudio/uni-ui/lib/uni-icon/uni-icon").then(__webpack_require__.bind(null, /*! @dcloudio/uni-ui/lib/uni-icon/uni-icon.vue */ "C:\\Users\\Administrator\\Documents\\HBuilderProjects\\gengniu\\node_modules\\@dcloudio\\uni-ui\\lib\\uni-icon\\uni-icon.vue"));};var uniList = function uniList() {return __webpack_require__.e(/*! import() | node-modules/@dcloudio/uni-ui/lib/uni-list/uni-list */ "node-modules/@dcloudio/uni-ui/lib/uni-list/uni-list").then(__webpack_require__.bind(null, /*! @dcloudio/uni-ui/lib/uni-list/uni-list.vue */ "C:\\Users\\Administrator\\Documents\\HBuilderProjects\\gengniu\\node_modules\\@dcloudio\\uni-ui\\lib\\uni-list\\uni-list.vue"));};var uniListItem = function uniListItem() {return __webpack_require__.e(/*! import() | node-modules/@dcloudio/uni-ui/lib/uni-list-item/uni-list-item */ "node-modules/@dcloudio/uni-ui/lib/uni-list-item/uni-list-item").then(__webpack_require__.bind(null, /*! @dcloudio/uni-ui/lib/uni-list-item/uni-list-item.vue */ "C:\\Users\\Administrator\\Documents\\HBuilderProjects\\gengniu\\node_modules\\@dcloudio\\uni-ui\\lib\\uni-list-item\\uni-list-item.vue"));};var _default =
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{
+  data: function data() {
+    return {};
+
+
+  },
+  components: {
+    uniIcon: uniIcon,
+    uniList: uniList,
+    uniListItem: uniListItem },
+
+  onLoad: function onLoad() {
+
+  },
+  methods: {
+    choose1: function choose1() {
+      console.log(1, " at pages\\trade\\trade.vue:83");
+    } } };exports.default = _default;
 
 /***/ }),
 

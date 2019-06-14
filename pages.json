@@ -24,7 +24,11 @@
 				"navigationBarTitleText": "交易"
 			}
 		}
-	],
+	    ,{
+            "path" : "pages/trade/handleTrade/handleTrade",
+            "style" : {}
+        }
+    ],
 	"tabBar": {
 		"color": "#222",
 		"selectedColor": "#dcb736",

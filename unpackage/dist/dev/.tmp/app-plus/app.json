@@ -3,7 +3,8 @@
     "pages/rank/rank",
     "pages/person/person",
     "pages/index/index",
-    "pages/trade/trade"
+    "pages/trade/trade",
+    "pages/trade/handleTrade/handleTrade"
   ],
   "subPackages": [],
   "window": {

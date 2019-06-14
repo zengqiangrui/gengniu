@@ -1,8 +1,6 @@
 
-.content {
-	height: 100rpx;
-	background: darkgrey;
-	color: white;
+.header {
+	width: 100%;
 	display: -webkit-box;
 	display: -webkit-flex;
 	display: -ms-flexbox;
@@ -11,14 +9,133 @@
 	-webkit-align-items: center;
 	    -ms-flex-align: center;
 	        align-items: center;
-	-webkit-box-pack: end;
-	-webkit-justify-content: flex-end;
-	    -ms-flex-pack: end;
-	        justify-content: flex-end;
-	font-size: 12rpx;
+	color: white;
+	background-color: darkgrey;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	height: 100rpx;
 }
-.asset-area {
+.profit {
+	color: red;
+}
+.header-item {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	margin: 10px;
+}
+.handleItem text {
+	font-size: 18rpx;
+	color: #222222;
+}
+.logo {
+	width: 60rpx;
+	height: 60rpx;
+}
+.assetArea {
 	width: 100%;
-	height: 200rpx;
+	height: 400rpx;
+	margin: 20rpx 0;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-flex-wrap: wrap;
+	    -ms-flex-wrap: wrap;
+	        flex-wrap: wrap;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 }
+.assetItem {
+	background: darkgrey;
+	width: 350rpx;
+	height: 200rpx;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	text-align: center;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	content: 100rpx;
+	border: 1px #dcb736 dashed;
+}
+.assetItem text {
+	margin: 10rpx;
+}
+.assetItem text:first-child {
+	font-weight: 200;
+	font-size: 15rpx;
+}
+.handleArea {
+	width: 100%;
+	height: 180rpx;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	background: darkgrey;
+}
+.handleItem {
+	width: 100%;
+	height: 100%;
+	border: 1px #dcb736 dashed;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+}
+.handle-icon {
+	width: 80rpx;
+	height: 80rpx;
+	margin: 15rpx;
+}
+
+
+
 
