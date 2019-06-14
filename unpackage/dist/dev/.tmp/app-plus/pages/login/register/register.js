@@ -80,12 +80,6 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 //
 //
 //
-//
-//
-//
-//
-//
-//
 var _default =
 {
   data: function data() {
@@ -97,24 +91,17 @@ var _default =
   methods: {
     code: function code() {var _this = this;
       var second = 5;
-      var that = this;
+      this.msg = "倒计时" + second;
       this.show = false;
       var interval = setInterval(function () {
-        _this.msg = "倒计时" + second;
-        second = second - 1;
-        if (second == 1) {
-          // this.msg = "获取验证码"
+        _this.msg = "倒计时" + --second;
+        if (second == 0) {
           _this.show = true;
-          // return
         }
-        // console.log(second)
       }, 1000);
-
       setTimeout(function () {
         clearInterval(interval);
-      }, 5000);
-
-
+      }, 5010);
 
     } } };exports.default = _default;
 

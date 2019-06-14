@@ -1,12 +1,8 @@
 {
   "pages": [
-<<<<<<< HEAD
-    "pages/login/login/login",
-=======
     "pages/login/register/register",
     "pages/login/login/login",
     "pages/trade/trade",
->>>>>>> 5ceb1120e0ffaa3e1f8fc65a13cbb52aa0d9120c
     "pages/rank/rank",
     "pages/person/person",
     "pages/index/index",
@@ -51,6 +47,6 @@
     "autoclose": false
   },
   "appname": "gengniu",
-  "compilerVersion": "2.0.1",
+  "compilerVersion": "2.0.0",
   "usingComponents": {}
 }

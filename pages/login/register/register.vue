@@ -70,12 +70,6 @@
 
 
 
-
-
-
-
-
-
 <script>
 	export default {
 		data() {
@@ -86,25 +80,18 @@
 		},
 		methods: {
 			code: function() {
-				var second = 5
-				var that = this
+				var second = 5;
+				this.msg = "倒计时" + second
 				this.show = false
 				var interval = setInterval(() => {
-					this.msg = "倒计时" + second
-					second = second - 1
-					if (second == 1) {
-						// this.msg = "获取验证码"
+					this.msg = "倒计时" + --second
+					if (second == 0) {
 						this.show = true
-						// return
 					}
-					// console.log(second)
 				}, 1000)
-
 				setTimeout(() => {
 					clearInterval(interval)
-				}, 5000)
-
-
+				}, 5010)
 
 			},
 		},
