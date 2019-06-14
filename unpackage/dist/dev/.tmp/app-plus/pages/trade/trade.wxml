@@ -1,1 +1,1 @@
-<view class="_div"></view>
+<view class="content"><view class="header"><view class="logo"><image src="../../static/icons/greatwall.jpg" mode></image></view><view class="head-msg">切换子账户</view><uni-icon vue-id="1" type="contact" color="white" bind:__l="__l"></uni-icon></view></view>

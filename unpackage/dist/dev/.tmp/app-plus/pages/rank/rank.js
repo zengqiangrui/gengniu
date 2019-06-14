@@ -145,12 +145,28 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 var _default =
 {
   data: function data() {
     return {
       duration: ["年", "季", "月", "周"],
-      array: [["a", "b"], ["c", "d"]],
+      condition: ["主账户", "子账户", "策略方案", "策略作者"],
+
       sites: [{
         name: '股琴A',
         jianjie: '曾获世界影响华人大奖牛逼哔哔哔哔哔哔哔哔哔哔',
@@ -208,7 +224,7 @@ var _default =
   },
   methods: {
     changePicker: function changePicker(res) {
-      console.log(" at pages\\rank\\rank.vue:111");
+      console.log(" at pages\\rank\\rank.vue:127");
     } } };exports.default = _default;
 
 /***/ }),
