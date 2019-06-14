@@ -3,23 +3,23 @@
 		<!--<view class="topcontext">-->
 		<view class="content">
 			<view class="bangdan">
-				<picker :range="condition">
-					<view>筛选条件</view>
+				<picker :range="condition" @change="ChangeCondition">
+					<view>{{column1}}</view>
 				</picker>
 			</view>
 			<view class="bangdanOne">
-				<picker mode="date">
-					<view>开始时间</view>
+				<picker mode="date" @change="ChangeStartingTime">
+					<view>{{column2}}</view>
 				</picker>
 			</view>
 			<view class="bangdanOne">
-				<picker mode="date">
-					<view>截止时间</view>
+				<picker mode="date" @change="ChangeDeadline">
+					<view>{{column3}}</view>
 				</picker>
 			</view>
 			<view class="bangdanTwo">
-				<picker :range="duration" .@change="changePicker">
-					<view>周期</view>
+				<picker :range="duration" @change="ChangeDuration">
+					<view>{{column4}}</view>
 				</picker>
 			</view>
 		</view>
@@ -64,6 +64,10 @@
 	export default {
 		data() {
 			return {
+				column1:"筛选条件",
+				column2:"开始时间",
+				column3:"截止时间",
+				column4:"周期",
 				duration: ["年", "季", "月", "周"],
 				condition: ["主账户", "子账户", "策略方案", "策略作者"],
 
@@ -120,13 +124,80 @@
 			}
 		},
 		onLoad() {
-
+			// uni.request({
+			// 	url:
+			// 	data:{},
+			// 	method:'GET',
+			// 	success:(res)=>{
+			// 		
+			// 	}
+			// })
 		},
 		methods: {
-			changePicker: res => {
-				console.log()
-			}
+			
+			ChangeDuration: function(e) {
+				var that =this
+				console.log(e)
+				var duration = e.target.value
+				var ReDuration=0
+				switch (duration) {
+					case 0:
+						ReDuration = "主"
+						break;
+					case 1:
+						ReDuration = "季"
+						break;
+					case 2:
+						ReDuration = "月"
+						break;
+					default:
+						ReDuration = "周"
+						break;	
+				}
+				console.log(ReDuration),
+				that.column4 = ReDuration
+			},
+			ChangeDeadline:function(e){
+				var that =this
+				var Deadline=e.detail.value
+				that.column3 = Deadline
+				console.log("++++++++++++@#$%^&*",Deadline)
+				console.log("++++++++++++",e.target.value)
+				
+			},
+			ChangeStartingTime:function(e){
+				var that =this
+				var StartingTime=e.detail.value
+				that.column2=StartingTime
+				console.log("++++++++++++@#$%^&*",StartingTime)
+				console.log("++++++++++++",e.target.value)
+			},
+		
+			ChangeCondition: function(e) {
+				var that =this
+				console.log(e)
+				var condition = e.target.value
+				var ReCondition=0
+				switch (condition) {
+					case 0:
+						ReCondition = "主账户"
+						break;
+					case 1:
+						ReCondition = "子账户"
+						break;
+					case 2:
+						ReCondition = "策略方案"
+						break;
+					default:
+						ReCondition = "策略作者"
+						break;	
+				}
+				that.column1=ReCondition
+				console.log(ReCondition)
+			},
 		}
+
+	
 	}
 </script>
 
@@ -141,7 +212,7 @@
 		display: flex;
 		flex-flow: row;
 		position: fixed;
-		top: 0px;
+		top: 40px;
 
 	}
 

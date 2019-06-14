@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/login/login/login",
     "pages/rank/rank",
     "pages/person/person",
     "pages/index/index",

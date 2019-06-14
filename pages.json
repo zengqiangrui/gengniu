@@ -1,6 +1,12 @@
 {
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
 		{
+			"path": "pages/login/login/login",
+			"style": {
+				"navigationBarTitleText":"登录"
+			}
+		},
+		{
 			"path": "pages/rank/rank",
 			"style": {
 				"navigationBarTitleText": "排行"
@@ -24,6 +30,7 @@
 				"navigationBarTitleText": "交易"
 			}
 		}
+
 	],
 	"tabBar": {
 		"color": "#222",

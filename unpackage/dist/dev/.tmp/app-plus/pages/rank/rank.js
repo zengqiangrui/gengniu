@@ -223,8 +223,28 @@ var _default =
 
   },
   methods: {
-    changePicker: function changePicker(res) {
-      console.log(" at pages\\rank\\rank.vue:127");
+    ChangeDuration: function ChangeDuration(e) {
+      console.log(e, " at pages\\rank\\rank.vue:127");
+      var duration = e.target.value;
+      var ReDuration = 0;
+      switch (duration) {
+        case 0:
+          ReDuration = "年";
+          break;
+        case 1:
+          ReDuration = "季";
+          break;
+        case 2:
+          ReDuration = "月";
+          break;
+        default:
+          ReDuration = "周";
+          break;}
+
+      console.log(ReDuration, " at pages\\rank\\rank.vue:144");
+    },
+    Changedate: function Changedate(e) {
+      console.log("++++++++++++", e, " at pages\\rank\\rank.vue:147");
     } } };exports.default = _default;
 
 /***/ }),

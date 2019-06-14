@@ -16,7 +16,7 @@
 	    -ms-flex-flow: row;
 	        flex-flow: row;
 	position: fixed;
-	top: 0px;
+	top: 40px;
 }
 .topcontext {
 	height: 25px;

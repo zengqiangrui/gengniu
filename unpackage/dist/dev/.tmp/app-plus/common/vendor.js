@@ -41,6 +41,23 @@ createPage(_index.default);
 
 /***/ }),
 
+/***/ "../../../gengniu/gengniu/main.js?{\"page\":\"pages%2Flogin%2Flogin%2Flogin\"}":
+/*!*********************************************************************************************!*\
+  !*** C:/Users/lyh/Desktop/gengniu/gengniu/main.js?{"page":"pages%2Flogin%2Flogin%2Flogin"} ***!
+  \*********************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ "../../../gengniu/gengniu/pages.json");
+
+var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ "./node_modules/@dcloudio/vue-cli-plugin-uni/packages/mp-vue/dist/mp.runtime.esm.js"));
+var _login = _interopRequireDefault(__webpack_require__(/*! ./pages/login/login/login.vue */ "../../../gengniu/gengniu/pages/login/login/login.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+createPage(_login.default);
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-app-plus/dist/index.js */ "./node_modules/@dcloudio/uni-app-plus/dist/index.js")["createPage"]))
+
+/***/ }),
+
 /***/ "../../../gengniu/gengniu/main.js?{\"page\":\"pages%2Fperson%2Fperson\"}":
 /*!***************************************************************************************!*\
   !*** C:/Users/lyh/Desktop/gengniu/gengniu/main.js?{"page":"pages%2Fperson%2Fperson"} ***!
