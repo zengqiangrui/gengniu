@@ -44,7 +44,7 @@
 
 		<view style="height: 1px;margin-top: 10px;"></view>
 		<view class="row">
-			<view class="row-l">真是姓名</view>
+			<view class="row-l">真实姓名</view>
 			<view class="row-r">
 				<input type="number" style="font-size: 15px;" placeholder="请输入手机号码" />
 			</view>
@@ -87,22 +87,20 @@
 		methods: {
 			code: function() {
 				var second = 5
-				var that = this
 				this.show = false
 				var interval = setInterval(() => {
+					console.log(second)
 					this.msg = "倒计时" + second
-					second = second - 1
-					if (second == 1) {
-						// this.msg = "获取验证码"
+					if(second == 0){
+						console.log("sss")
 						this.show = true
-						// return
 					}
-					// console.log(second)
+					second--
 				}, 1000)
 
 				setTimeout(() => {
 					clearInterval(interval)
-				}, 5000)
+				}, 3000)
 
 
 
