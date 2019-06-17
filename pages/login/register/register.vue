@@ -96,7 +96,6 @@
 		},
 		methods: {
 			
-			
 			code: function() {
 				var second = 5
 				this.show = false
@@ -118,8 +117,10 @@
 			
 			
 			
+			
 
 		}
+
 	}
 </script>
 

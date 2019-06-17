@@ -139,10 +139,11 @@
 				var that =this
 				console.log(e)
 				var duration = e.target.value
+				console.log("du",duration)
 				var ReDuration=0
 				switch (duration) {
 					case 0:
-						ReDuration = "主"
+						ReDuration = "年"
 						break;
 					case 1:
 						ReDuration = "季"
@@ -154,7 +155,7 @@
 						ReDuration = "周"
 						break;	
 				}
-				console.log(ReDuration),
+				console.log("tes",ReDuration),
 				that.column4 = ReDuration
 			},
 			ChangeDeadline:function(e){
@@ -212,7 +213,7 @@
 		display: flex;
 		flex-flow: row;
 		position: fixed;
-		top: 40px;
+		top:40px
 
 	}
 
