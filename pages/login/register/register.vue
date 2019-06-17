@@ -70,12 +70,6 @@
 
 
 
-
-
-
-
-
-
 <script>
 	export default {
 		data() {
@@ -96,13 +90,21 @@
 						this.show = true
 					}
 					second--
+				var second = 5;
+				this.msg = "倒计时" + second
+				this.show = false
+				var interval = setInterval(() => {
+					this.msg = "倒计时" + --second
+					if (second == 0) {
+						this.show = true
+					}
 				}, 1000)
-
 				setTimeout(() => {
 					clearInterval(interval)
 				}, 3000)
 
 
+				}, 5010)
 
 			},
 		},
