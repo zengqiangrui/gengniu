@@ -80,16 +80,6 @@
 		},
 		methods: {
 			code: function() {
-				var second = 5
-				this.show = false
-				var interval = setInterval(() => {
-					console.log(second)
-					this.msg = "倒计时" + second
-					if(second == 0){
-						console.log("sss")
-						this.show = true
-					}
-					second--
 				var second = 5;
 				this.msg = "倒计时" + second
 				this.show = false
@@ -101,8 +91,6 @@
 				}, 1000)
 				setTimeout(() => {
 					clearInterval(interval)
-				}, 3000)
-
 
 				}, 5010)
 			},
