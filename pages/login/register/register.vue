@@ -92,7 +92,6 @@
 				setTimeout(() => {
 					clearInterval(interval)
 				}, 5010)
-
 			},
 		},
 

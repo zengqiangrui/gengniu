@@ -102,7 +102,6 @@ var _default =
       setTimeout(function () {
         clearInterval(interval);
       }, 5010);
-
     } } };exports.default = _default;
 
 /***/ }),

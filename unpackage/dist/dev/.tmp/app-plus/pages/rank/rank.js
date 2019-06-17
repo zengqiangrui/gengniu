@@ -149,10 +149,11 @@ var _default =
       var that = this;
       console.log(e, " at pages\\rank\\rank.vue:140");
       var duration = e.target.value;
+      console.log("du", duration, " at pages\\rank\\rank.vue:142");
       var ReDuration = 0;
       switch (duration) {
         case 0:
-          ReDuration = "主";
+          ReDuration = "年";
           break;
         case 1:
           ReDuration = "季";
@@ -164,28 +165,28 @@ var _default =
           ReDuration = "周";
           break;}
 
-      console.log(ReDuration, " at pages\\rank\\rank.vue:157"),
+      console.log("tes", ReDuration, " at pages\\rank\\rank.vue:158"),
       that.column4 = ReDuration;
     },
     ChangeDeadline: function ChangeDeadline(e) {
       var that = this;
       var Deadline = e.detail.value;
       that.column3 = Deadline;
-      console.log("++++++++++++@#$%^&*", Deadline, " at pages\\rank\\rank.vue:164");
-      console.log("++++++++++++", e.target.value, " at pages\\rank\\rank.vue:165");
+      console.log("++++++++++++@#$%^&*", Deadline, " at pages\\rank\\rank.vue:165");
+      console.log("++++++++++++", e.target.value, " at pages\\rank\\rank.vue:166");
 
     },
     ChangeStartingTime: function ChangeStartingTime(e) {
       var that = this;
       var StartingTime = e.detail.value;
       that.column2 = StartingTime;
-      console.log("++++++++++++@#$%^&*", StartingTime, " at pages\\rank\\rank.vue:172");
-      console.log("++++++++++++", e.target.value, " at pages\\rank\\rank.vue:173");
+      console.log("++++++++++++@#$%^&*", StartingTime, " at pages\\rank\\rank.vue:173");
+      console.log("++++++++++++", e.target.value, " at pages\\rank\\rank.vue:174");
     },
 
     ChangeCondition: function ChangeCondition(e) {
       var that = this;
-      console.log(e, " at pages\\rank\\rank.vue:178");
+      console.log(e, " at pages\\rank\\rank.vue:179");
       var condition = e.target.value;
       var ReCondition = 0;
       switch (condition) {
@@ -203,7 +204,7 @@ var _default =
           break;}
 
       that.column1 = ReCondition;
-      console.log(ReCondition, " at pages\\rank\\rank.vue:196");
+      console.log(ReCondition, " at pages\\rank\\rank.vue:197");
     } } };exports.default = _default;
 
 /***/ }),
