@@ -8,134 +8,277 @@
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-var _default =
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var uniPopup = function uniPopup() {return __webpack_require__.e(/*! import() | node-modules/@dcloudio/uni-ui/lib/uni-popup/uni-popup */ "node-modules/@dcloudio/uni-ui/lib/uni-popup/uni-popup").then(__webpack_require__.bind(null, /*! @dcloudio/uni-ui/lib/uni-popup/uni-popup.vue */ "C:\\Users\\Administrator\\Documents\\HBuilderProjects\\gengniu\\node_modules\\@dcloudio\\uni-ui\\lib\\uni-popup\\uni-popup.vue"));};var _default =
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 {
+
   data: function data() {
     return {
+      leftSide: "",
+      rightSide: "",
+      popShow: false,
       curTab: 0,
       headList: ["买入", "卖出", "撤单", "持仓"],
-      commItem: ["股票代码", "处理状态", "委托价", "委托量", "委托金额", "成交数量", "成交价格", "成交金额"] };
+      commHead: ["股票代码", "处理状态", "委托价", "委托量", "委托金额"], // , "成交数量", "成交价格", "成交金额"
+      commData: [{
+        stockCode: "000001",
+        orderIdn: "1000000",
+        orderCategory: "0",
+        orderVolume: 100,
+        orderPrice: 6.66,
+        orderAmt: 6.66,
+        tradeVolume: 100,
+        tradePrice: 6.66,
+        tradeAmt: 666,
+        orderStatus: 0 },
+
+      {
+        stockCode: "000002",
+        orderIdn: "1000000",
+        orderCategory: "0",
+        orderVolume: 100,
+        orderPrice: 6.66,
+        orderAmt: 6.66,
+        tradeVolume: 100,
+        tradePrice: 6.66,
+        tradeAmt: 666,
+        orderStatus: 0 },
+
+      {
+        stockCode: "000003",
+        orderIdn: "1000000",
+        orderCategory: "0",
+        orderVolume: 100,
+        orderPrice: 6.66,
+        orderAmt: 6.66,
+        tradeVolume: 100,
+        tradePrice: 6.66,
+        tradeAmt: 666,
+        orderStatus: 0 }],
+
+
+      commDetail: {
+        stockCode: "000000",
+        orderIdn: "1000000",
+        orderCategory: "0",
+        orderVolume: 100,
+        orderPrice: 6.66,
+        orderAmt: 6.66,
+        tradeVolume: 100,
+        tradePrice: 6.66,
+        tradeAmt: 666,
+        orderStatus: 0 },
+
+      holdHead: ["股票代码", "持仓数量", "可卖数量", "买入价", "收盘市值"],
+      holdData: [{
+        stockCode: "000000",
+        volume: 1000,
+        availVolume: 1000,
+        buyPrice: 6.66,
+        dayMarketValue: 7.77,
+        bookProfitLoss: 1000.23,
+        profitLoss: 66.66,
+        openDate: 2018 - 10 - 1,
+        closeDate: 2019 - 6 - 6 },
+      {
+        stockCode: "000001",
+        volume: 1000,
+        availVolume: 1000,
+        buyPrice: 6.66,
+        dayMarketValue: 7.77,
+        bookProfitLoss: 1000.23,
+        profitLoss: 66.66,
+        openDate: 2018 - 10 - 1,
+        closeDate: 2019 - 6 - 6 },
+      {
+        stockCode: "000002",
+        volume: 1000,
+        availVolume: 1000,
+        buyPrice: 6.66,
+        dayMarketValue: 7.77,
+        bookProfitLoss: 1000.23,
+        profitLoss: 66.66,
+        openDate: 2018 - 10 - 1,
+        closeDate: 2019 - 6 - 6 }],
+
+      holdDetail: {} };
 
   },
-  onLoad: function onLoad(res) {
 
+  components: {
+    "uni-popup": uniPopup },
+
+  onLoad: function onLoad(res) {
     this.curTab = res.tab;
-    console.log(Math.pow(2, 3), " at pages\\trade\\handleTrade\\handleTrade.vue:117");
   },
   methods: {
     chooseTab: function chooseTab(res) {
       this.curTab = res;
     },
     buyStock: function buyStock(e) {
-      console.log(e, " at pages\\trade\\handleTrade\\handleTrade.vue:124");
+      console.log(e, " at pages\\trade\\handleTrade\\handleTrade.vue:242");
     },
     sellStock: function sellStock(e) {
-      console.log("sell", " at pages\\trade\\handleTrade\\handleTrade.vue:127");
+      console.log("sell", " at pages\\trade\\handleTrade\\handleTrade.vue:245");
+    },
+    hidePopup: function hidePopup(e) {
+      this.popShow = false;
+    },
+    handleComm: function handleComm(index) {
+      this.commDetail = this.commData[index];
+      this.popShow = true;
+    },
+    cancelOrder: function cancelOrder() {
+      var that = this;
+      uni.showModal({
+        title: "确认取消？",
+        confirmColor: "#DCB736",
+        success: function success(e) {
+          console.log(e, " at pages\\trade\\handleTrade\\handleTrade.vue:260");
+          if (e.confirm) {
+            that.popShow = false;
+          }
+        } });
+
+    },
+    handleHold: function handleHold(index) {
+      this.holdDetail = this.holdData[index];
+      this.popShow = true;
     } } };exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-app-plus/dist/index.js */ "./node_modules/@dcloudio/uni-app-plus/dist/index.js")["default"]))
 
 /***/ }),
 

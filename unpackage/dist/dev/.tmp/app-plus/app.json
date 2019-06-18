@@ -1,9 +1,9 @@
 {
   "pages": [
     "pages/trade/trade",
-    "pages/trade/handleTrade/handleTrade",
-    "pages/login/register/register",
     "pages/login/login/login",
+    "pages/login/register/register",
+    "pages/trade/handleTrade/handleTrade",
     "pages/rank/rank",
     "pages/person/person",
     "pages/index/index"

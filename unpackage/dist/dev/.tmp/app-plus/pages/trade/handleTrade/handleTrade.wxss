@@ -68,16 +68,49 @@ button {
 .submit {
 	background: #DCB736;
 }
-.comm-table{
+.comm-table {
 	border: solid 1px black;
 }
-.thead{
+.thead {
 	display: -webkit-box;
 	display: -webkit-flex;
 	display: -ms-flexbox;
 	display: flex;
 }
-.comm-item{
-	border: 1px solid black;
+.comm-item {
+	border-bottom: 1px solid black;
+	width: 300rpx;
+	font-size: 22rpx;
+	text-align: center;
 }
+.table-row {
+	/* width: 300upx;
+	font-size: 22upx;
+	text-align: center; */
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+}
+.table-data {
+	border-bottom: 1px solid black;
+	width: 300rpx;
+	font-size: 28rpx;
+	margin: 4rpx;
+	padding: 8rpx;
+	text-align: center;
+}
+.comm-detail {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	width: 400rpx;
+}
+
 

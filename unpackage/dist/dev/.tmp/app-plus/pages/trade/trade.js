@@ -72,10 +72,29 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 {
   data: function data() {
-    return {};
-
+    return {
+      userNiuRen: false,
+      left: [1, 3, 5, 7, 9],
+      right: [2, 4, 6, 8, 10] };
 
   },
   components: {
@@ -84,20 +103,20 @@
     uniListItem: uniListItem },
 
   onLoad: function onLoad() {
-    this.userNiuRen = true;
+    this.userNiuRen = false;
   },
   methods: {
     choose1: function choose1() {
-      console.log(1, " at pages\\trade\\trade.vue:81");
+      console.log(1, " at pages\\trade\\trade.vue:100");
     },
     choose2: function choose2() {
-      console.log("choose2", " at pages\\trade\\trade.vue:84");
+      console.log("choose2", " at pages\\trade\\trade.vue:103");
     },
     choose3: function choose3() {
-      console.log("choose3", " at pages\\trade\\trade.vue:87");
+      console.log("choose3", " at pages\\trade\\trade.vue:106");
     },
     handleTrade: function handleTrade(res) {
-      console.log(res, " at pages\\trade\\trade.vue:90");
+      console.log(res, " at pages\\trade\\trade.vue:109");
       var tab = res.currentTarget.dataset.tab;
       uni.navigateTo({
         url: "handleTrade/handleTrade?tab=" + tab });
