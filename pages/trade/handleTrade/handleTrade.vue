@@ -4,7 +4,6 @@
 			<view @tap="chooseTab(index)" v-for="(item,index) in headList" :class="{navActive:curTab==index,navItem:curTab!=index}">{{item}}</view>
 		</view>
 
-
 		<view class="page" v-if="curTab==0">
 			<form @submit="buyStock">
 				<view class="section section_gap">

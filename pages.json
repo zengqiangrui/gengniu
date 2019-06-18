@@ -4,6 +4,9 @@
 			"path": "pages/login/login/login",
 			"style": {
 				"navigationBarTitleText": "登录"
+			"path": "pages/login/register/register",
+			"style": {
+				"navigationBarTitleText": "注册"
 			}
 		},
 		{
@@ -23,6 +26,9 @@
 			"path": "pages/login/register/register",
 			"style": {
 				"navigationBarTitleText": "注册"
+			"path": "pages/login/login/login",
+			"style": {
+				"navigationBarTitleText": "登录"
 			}
 		},
 		{

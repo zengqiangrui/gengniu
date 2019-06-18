@@ -10425,7 +10425,6 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 //
 //
 //
-//
 var _default =
 {
   data: function data() {
@@ -10438,17 +10437,17 @@ var _default =
   onLoad: function onLoad(res) {
 
     this.curTab = res.tab;
-    console.log(Math.pow(2, 3), " at pages\\trade\\handleTrade\\handleTrade.vue:118");
+    console.log(Math.pow(2, 3), " at pages\\trade\\handleTrade\\handleTrade.vue:117");
   },
   methods: {
     chooseTab: function chooseTab(res) {
       this.curTab = res;
     },
     buyStock: function buyStock(e) {
-      console.log(e, " at pages\\trade\\handleTrade\\handleTrade.vue:125");
+      console.log(e, " at pages\\trade\\handleTrade\\handleTrade.vue:124");
     },
     sellStock: function sellStock(e) {
-      console.log("sell", " at pages\\trade\\handleTrade\\handleTrade.vue:128");
+      console.log("sell", " at pages\\trade\\handleTrade\\handleTrade.vue:127");
     } } };exports.default = _default;
 
 /***/ }),
@@ -10676,16 +10675,28 @@ var _default =
   methods: {
     code: function code() {var _this = this;
       var second = 5;
-      this.msg = "倒计时" + second;
       this.show = false;
       var interval = setInterval(function () {
-        _this.msg = "倒计时" + --second;
+        console.log(second, " at pages\\login\\register\\register.vue:86");
+        _this.msg = "倒计时" + second;
         if (second == 0) {
+          console.log("sss", " at pages\\login\\register\\register.vue:89");
           _this.show = true;
         }
-      }, 1000);
-      setTimeout(function () {
-        clearInterval(interval);
+        second--;
+        var second = 5;
+        _this.msg = "倒计时" + second;
+        _this.show = false;
+        var interval = setInterval(function () {
+          _this.msg = "倒计时" + --second;
+          if (second == 0) {
+            _this.show = true;
+          }
+        }, 1000);
+        setTimeout(function () {
+          clearInterval(interval);
+        }, 3000);
+
       }, 5010);
     } } };exports.default = _default;
 

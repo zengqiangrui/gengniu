@@ -91,16 +91,28 @@ var _default =
   methods: {
     code: function code() {var _this = this;
       var second = 5;
-      this.msg = "倒计时" + second;
       this.show = false;
       var interval = setInterval(function () {
-        _this.msg = "倒计时" + --second;
+        console.log(second, " at pages\\login\\register\\register.vue:86");
+        _this.msg = "倒计时" + second;
         if (second == 0) {
+          console.log("sss", " at pages\\login\\register\\register.vue:89");
           _this.show = true;
         }
-      }, 1000);
-      setTimeout(function () {
-        clearInterval(interval);
+        second--;
+        var second = 5;
+        _this.msg = "倒计时" + second;
+        _this.show = false;
+        var interval = setInterval(function () {
+          _this.msg = "倒计时" + --second;
+          if (second == 0) {
+            _this.show = true;
+          }
+        }, 1000);
+        setTimeout(function () {
+          clearInterval(interval);
+        }, 3000);
+
       }, 5010);
     } } };exports.default = _default;
 

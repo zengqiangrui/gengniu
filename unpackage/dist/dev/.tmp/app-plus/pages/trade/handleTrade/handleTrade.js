@@ -112,7 +112,6 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 //
 //
 //
-//
 var _default =
 {
   data: function data() {
@@ -125,17 +124,17 @@ var _default =
   onLoad: function onLoad(res) {
 
     this.curTab = res.tab;
-    console.log(Math.pow(2, 3), " at pages\\trade\\handleTrade\\handleTrade.vue:118");
+    console.log(Math.pow(2, 3), " at pages\\trade\\handleTrade\\handleTrade.vue:117");
   },
   methods: {
     chooseTab: function chooseTab(res) {
       this.curTab = res;
     },
     buyStock: function buyStock(e) {
-      console.log(e, " at pages\\trade\\handleTrade\\handleTrade.vue:125");
+      console.log(e, " at pages\\trade\\handleTrade\\handleTrade.vue:124");
     },
     sellStock: function sellStock(e) {
-      console.log("sell", " at pages\\trade\\handleTrade\\handleTrade.vue:128");
+      console.log("sell", " at pages\\trade\\handleTrade\\handleTrade.vue:127");
     } } };exports.default = _default;
 
 /***/ }),

@@ -97,6 +97,7 @@
 		methods: {
 			
 			code: function() {
+
 				var second = 5
 				this.show = false
 				this.msg = "倒计时" + second
