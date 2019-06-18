@@ -1,7 +1,7 @@
 <template>
 	<view class="content">
-		<uni-list>
-			<uni-list-item title="长城证券" note="点击切换主账户" thumb="/static/icons/greatwall.jpg"></uni-list-item>
+		<uni-list >
+			<uni-list-item @tap="tapswitch" title="长城证券" note="点击切换主账户"  thumb="/static/icons/greatwall.jpg" ></uni-list-item>
 		</uni-list>
 
 
@@ -92,6 +92,14 @@
 				uni.navigateTo({
 					url: "handleTrade/handleTrade?tab="+tab
 				})
+			},
+			tapswitch:function(){
+				uni.navigateTo({
+					url: '../accounts/accounts',
+					success: res => {},
+					fail: () => {},
+					complete: () => {}
+				});
 			}
 		}
 	}

@@ -1,6 +1,12 @@
 {
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
 		{
+			"path": "pages/login/login/login",
+			"style": {
+				"navigationBarTitleText": "登录"
+			}
+		},
+		{
 			"path": "pages/trade/trade",
 			"style": {
 				"navigationBarTitleText": "交易"
@@ -17,12 +23,6 @@
 			"path": "pages/login/register/register",
 			"style": {
 				"navigationBarTitleText": "注册"
-			}
-		},
-		{
-			"path": "pages/login/login/login",
-			"style": {
-				"navigationBarTitleText": "登录"
 			}
 		},
 		{
@@ -43,7 +43,21 @@
 				"navigationBarTitleText": "index"
 			}
 		}
-	],
+	    ,{
+            "path" : "pages/login/pwd/pwd",
+            "style" : {
+				"navigationBarTitleText": "修改密码"
+			}
+        }
+        ,{
+            "path" : "pages/accounts/accounts",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/accounts/addAccount/addAccount",
+            "style" : {}
+        }
+    ],
 
 	"tabBar": {
 		"color": "#222",
