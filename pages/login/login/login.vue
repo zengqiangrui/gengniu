@@ -27,13 +27,13 @@
 
 		<view style="height: 1px;margin-top: 20px;"></view>
 		<view>
-			<button class="login">login</button>
+			<button class="login" @tap="login">login</button>
 		</view>
 
 		<view style="height: 1px;margin-top: 15px;"></view>
 		<view class="pas">
 			<view class="pas-l" @tap="regi">立即注册</view>
-			<view class="pas-r">忘记密码</view>
+			<view class="pas-r" @tap="pwd">忘记密码</view>
 		</view>
 
 		<!-- <uni-icon type="locked" color="#2AC845" size=35></uni-icon> -->
@@ -73,6 +73,19 @@
 					fail: () => {},
 					complete: () => {}
 				});
+			},
+			pwd:function(){
+				uni.navigateTo({
+					url: '../pwd/pwd',
+					success: res => {},
+					fail: () => {},
+					complete: () => {}
+				});
+			},
+			login:function(){
+				uni.switchTab({
+					url: '../../trade/trade',
+				})
 			}
 		},
 		components: {

@@ -42,7 +42,21 @@
 				"navigationBarTitleText": "index"
 			}
 		}
-	],
+	    ,{
+            "path" : "pages/login/pwd/pwd",
+            "style" : {
+				"navigationBarTitleText": "修改密码"
+			}
+        }
+        ,{
+            "path" : "pages/accounts/accounts",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/accounts/addAccount/addAccount",
+            "style" : {}
+        }
+    ],
 
 	"tabBar": {
 		"color": "#222",
