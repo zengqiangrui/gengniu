@@ -164,6 +164,10 @@ var _default =
 {
   data: function data() {
     return {
+      column1: "筛选条件",
+      column2: "开始时间",
+      column3: "截止时间",
+      column4: "周期",
       duration: ["年", "季", "月", "周"],
       condition: ["主账户", "子账户", "策略方案", "策略作者"],
 
@@ -220,16 +224,25 @@ var _default =
 
   },
   onLoad: function onLoad() {
-
+    // uni.request({
+    // 	url:
+    // 	data:{},
+    // 	method:'GET',
+    // 	success:(res)=>{
+    // 		
+    // 	}
+    // })
   },
   methods: {
+
     ChangeDuration: function ChangeDuration(e) {
-      console.log(e, " at pages\\rank\\rank.vue:127");
+      var that = this;
+      console.log(e, " at pages\\rank\\rank.vue:140");
       var duration = e.target.value;
       var ReDuration = 0;
       switch (duration) {
         case 0:
-          ReDuration = "年";
+          ReDuration = "主";
           break;
         case 1:
           ReDuration = "季";
@@ -241,10 +254,46 @@ var _default =
           ReDuration = "周";
           break;}
 
-      console.log(ReDuration, " at pages\\rank\\rank.vue:144");
+      console.log(ReDuration, " at pages\\rank\\rank.vue:157"),
+      that.column4 = ReDuration;
     },
-    Changedate: function Changedate(e) {
-      console.log("++++++++++++", e, " at pages\\rank\\rank.vue:147");
+    ChangeDeadline: function ChangeDeadline(e) {
+      var that = this;
+      var Deadline = e.detail.value;
+      that.column3 = Deadline;
+      console.log("++++++++++++@#$%^&*", Deadline, " at pages\\rank\\rank.vue:164");
+      console.log("++++++++++++", e.target.value, " at pages\\rank\\rank.vue:165");
+
+    },
+    ChangeStartingTime: function ChangeStartingTime(e) {
+      var that = this;
+      var StartingTime = e.detail.value;
+      that.column2 = StartingTime;
+      console.log("++++++++++++@#$%^&*", StartingTime, " at pages\\rank\\rank.vue:172");
+      console.log("++++++++++++", e.target.value, " at pages\\rank\\rank.vue:173");
+    },
+
+    ChangeCondition: function ChangeCondition(e) {
+      var that = this;
+      console.log(e, " at pages\\rank\\rank.vue:178");
+      var condition = e.target.value;
+      var ReCondition = 0;
+      switch (condition) {
+        case 0:
+          ReCondition = "主账户";
+          break;
+        case 1:
+          ReCondition = "子账户";
+          break;
+        case 2:
+          ReCondition = "策略方案";
+          break;
+        default:
+          ReCondition = "策略作者";
+          break;}
+
+      that.column1 = ReCondition;
+      console.log(ReCondition, " at pages\\rank\\rank.vue:196");
     } } };exports.default = _default;
 
 /***/ }),
