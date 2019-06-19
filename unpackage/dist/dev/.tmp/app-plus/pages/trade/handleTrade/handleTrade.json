@@ -1,4 +1,6 @@
 {
   "navigationBarTitleText": "交易处理",
-  "usingComponents": {}
+  "usingComponents": {
+    "uni-popup": "/node-modules/@dcloudio/uni-ui/lib/uni-popup/uni-popup"
+  }
 }

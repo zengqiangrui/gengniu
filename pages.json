@@ -19,12 +19,23 @@
 			}
 		},
 		{
+			"path": "pages/login/login/login",
+			"style": {
+				"navigationBarTitleText": "登录"
+			}
+		},
+		{
+			"path": "pages/login/register/register",
+			"style": {
+				"navigationBarTitleText": "注册"
+			}
+		},
+		{
 			"path": "pages/trade/handleTrade/handleTrade",
 			"style": {
 				"navigationBarTitleText": "交易处理"
 			}
 		},
-
 		{
 			"path": "pages/rank/rank",
 			"style": {
