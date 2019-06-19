@@ -2,12 +2,16 @@
   "pages": [
     "pages/table/table",
     "pages/login/register/register",
-    "pages/login/login/login",
     "pages/trade/trade",
+    "pages/login/login/login",
+    "pages/login/register/register",
+    "pages/trade/handleTrade/handleTrade",
     "pages/rank/rank",
     "pages/person/person",
     "pages/index/index",
-    "pages/trade/handleTrade/handleTrade"
+    "pages/login/pwd/pwd",
+    "pages/accounts/accounts",
+    "pages/accounts/addAccount/addAccount"
   ],
   "subPackages": [],
   "window": {

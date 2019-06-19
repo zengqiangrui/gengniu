@@ -10,7 +10,7 @@
 	    -ms-flex-align: center;
 	        align-items: center;
 	color: white;
-	background-color: darkgrey;
+	background-color: grey;
 	-webkit-box-pack: justify;
 	-webkit-justify-content: space-between;
 	    -ms-flex-pack: justify;
@@ -60,7 +60,7 @@
 	        justify-content: center;
 }
 .assetItem {
-	background: darkgrey;
+	background: grey;
 	width: 350rpx;
 	height: 200rpx;
 	display: -webkit-box;
@@ -106,7 +106,7 @@
 	-webkit-justify-content: space-between;
 	    -ms-flex-pack: justify;
 	        justify-content: space-between;
-	background: darkgrey;
+	background: grey;
 }
 .handleItem {
 	width: 100%;
@@ -135,7 +135,69 @@
 	height: 80rpx;
 	margin: 15rpx;
 }
-
-
-
+uni-list-item {
+	background: grey;
+	color: #DCB736
+}
+.otherList {
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+}
+.container {
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+}
+.accountArea-left,
+.accountArea-right {
+	width: 50%;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	/* flex-wrap: wrap; */
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	padding: 4rpx;
+}
+.subAccountArea {
+	width: 98%;
+	height: 240rpx;
+	background: grey;
+	margin: 4rpx 0rpx;
+	padding: 4rpx;
+}
+.common-handle{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: row;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+}
+.common-btn{
+	width: 100%;
+	background: #DCB736;
+}
 

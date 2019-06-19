@@ -5,7 +5,7 @@
 		<view class="row">
 			<view class="row-l">昵称</view>
 			<view class="row-r">
-				<input type="number" style="font-size: 15px;" placeholder="请输入手机号码" />
+				<input type="number" style="font-size: 15px;" placeholder="请输入昵称" />
 			</view>
 		</view>
 
@@ -30,7 +30,23 @@
 		<view class="row">
 			<view class="row-l">验证码</view>
 			<view class="row-r">
-				<input type="number" style="font-size: 15px;" placeholder="请输入手机号码" />
+				<input type="number" style="font-size: 15px;" placeholder="请输入验证码" />
+			</view>
+		</view>
+		
+		<view style="height: 1px;margin-top: 10px;"></view>
+		<view class="row">
+			<view class="row-l">密码</view>
+			<view class="row-r">
+				<input type="number" style="font-size: 15px;" placeholder="请输入密码" />
+			</view>
+		</view>
+		
+		<view style="height: 1px;margin-top: 10px;"></view>
+		<view class="row">
+			<view class="row-l">确认密码</view>
+			<view class="row-r">
+				<input type="number" style="font-size: 15px;" placeholder="请再次输入密码" />
 			</view>
 		</view>
 
@@ -38,15 +54,15 @@
 		<view class="row">
 			<view class="row-l">邮箱</view>
 			<view class="row-r">
-				<input type="number" style="font-size: 15px;" placeholder="请输入手机号码" />
+				<input type="number" style="font-size: 15px;" placeholder="请输入邮箱" />
 			</view>
 		</view>
 
 		<view style="height: 1px;margin-top: 10px;"></view>
 		<view class="row">
-			<view class="row-l">真是姓名</view>
+			<view class="row-l">真实姓名</view>
 			<view class="row-r">
-				<input type="number" style="font-size: 15px;" placeholder="请输入手机号码" />
+				<input type="number" style="font-size: 15px;" placeholder="请输入真实姓名" />
 			</view>
 		</view>
 
@@ -59,19 +75,13 @@
 
 		<view style="height: 1px;margin-top: 10px;"></view>
 		<view>
-			<button class="login">立即注册</button>
+			<button class="login" @tap="regi">立即注册</button>
 		</view>
 
 
 
 	</view>
 </template>
-
-
-
-
-
-
 
 
 
@@ -85,29 +95,36 @@
 			}
 		},
 		methods: {
+			
 			code: function() {
+
 				var second = 5
-				var that = this
+				this.show = false
+				this.msg = "倒计时" + second
 				this.show = false
 				var interval = setInterval(() => {
-					this.msg = "倒计时" + second
-					second = second - 1
-					if (second == 1) {
-						// this.msg = "获取验证码"
+					this.msg = "倒计时" + --second
+					if (second == 0) {
 						this.show = true
-						// return
 					}
-					// console.log(second)
 				}, 1000)
-
+				
 				setTimeout(() => {
 					clearInterval(interval)
-				}, 5000)
-
-
-
+				}, 5010)
+			
 			},
-		},
+			
+			regi:function(){
+				console.log("www")
+			}
+			
+			
+			
+			
+			
+
+		}
 
 	}
 </script>

@@ -3,11 +3,18 @@
 		{
 		    "path" : "pages/table/table",
 		    "style" : {}
+
 		},
 		{
 			"path": "pages/login/register/register",
 			"style": {
 				"navigationBarTitleText": "注册"
+			}
+		},
+		{
+			"path": "pages/trade/trade",
+			"style": {
+				"navigationBarTitleText": "交易"
 			}
 		},
 		{
@@ -17,9 +24,15 @@
 			}
 		},
 		{
-			"path": "pages/trade/trade",
+			"path": "pages/login/register/register",
 			"style": {
-				"navigationBarTitleText": "交易"
+				"navigationBarTitleText": "注册"
+			}
+		},
+		{
+			"path": "pages/trade/handleTrade/handleTrade",
+			"style": {
+				"navigationBarTitleText": "交易处理"
 			}
 		},
 		{
@@ -39,13 +52,23 @@
 			"style": {
 				"navigationBarTitleText": "index"
 			}
+		},
+		{
+			"path": "pages/login/pwd/pwd",
+			"style": {
+				"navigationBarTitleText": "修改密码"
+			}
+		},
+		{
+			"path": "pages/accounts/accounts",
+			"style": {}
+		},
+		{
+			"path": "pages/accounts/addAccount/addAccount",
+			"style": {}
 		}
-	    ,{
-            "path" : "pages/trade/handleTrade/handleTrade",
-            "style" : {}
-        }
-        
-    ],
+
+	],
 
 	"tabBar": {
 		"color": "#222",

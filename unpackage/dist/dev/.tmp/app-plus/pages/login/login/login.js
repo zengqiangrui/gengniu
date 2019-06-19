@@ -173,6 +173,19 @@ __webpack_require__.r(__webpack_exports__);
         fail: function fail() {},
         complete: function complete() {} });
 
+    },
+    pwd: function pwd() {
+      uni.navigateTo({
+        url: '../pwd/pwd',
+        success: function success(res) {},
+        fail: function fail() {},
+        complete: function complete() {} });
+
+    },
+    login: function login() {
+      uni.switchTab({
+        url: '../../trade/trade' });
+
     } },
 
   components: {
