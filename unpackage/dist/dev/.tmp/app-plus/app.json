@@ -1,5 +1,7 @@
 {
   "pages": [
+    "pages/table/table",
+    "pages/login/register/register",
     "pages/trade/trade",
     "pages/login/login/login",
     "pages/login/register/register",
