@@ -56,6 +56,7 @@
             "path" : "pages/accounts/addAccount/addAccount",
             "style" : {}
         }
+   
     ],
 
 	"tabBar": {
@@ -64,6 +65,11 @@
 		"borderStyle": "black",
 		"backgroundColor": "darkgrey",
 		"list": [{
+			"pagePath": "pages/index/index",
+			"iconPath": "static/icons/index.png",
+			"selectedIconPath": "static/icons/index-gold.png",
+			"text": "首页"
+		},{
 			"pagePath": "pages/rank/rank",
 			"iconPath": "static/icons/rank.png",
 			"selectedIconPath": "static/icons/rank-gold.png",

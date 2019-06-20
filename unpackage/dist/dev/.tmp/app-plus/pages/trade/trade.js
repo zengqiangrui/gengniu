@@ -89,12 +89,65 @@
 
 
 
+
+
+
+
+
+
+
+
+
 {
   data: function data() {
     return {
       userNiuRen: false,
-      left: [1, 3, 5, 7, 9],
-      right: [2, 4, 6, 8, 10] };
+      data: [1, 2, 3, 4, 5, 6, 7, 8, 9, 0],
+      subAccountData: [{
+        subAccIdn: "01s3s2r", //主键，
+        tradeAccNo: "123123", //券商真实账号，
+        tradeSubAccNo: "1313131", //子账号，
+        tradeSubAccName: "测试策略", //子账户名称
+        remark: "备注", //
+        buyStrategy: "买入策略。。。", //买入策略
+        sell_strategy: "卖出策略。。。。", //卖出策略
+        openDate: "开户日期", //开户日期
+        strategyPlan: "策略方案", //策略方案
+        status: "0" //0未启用，A已启用，D暂停使用，C关闭，不再启用
+      }, {
+        subAccIdn: "01s3s2r", //主键，
+        tradeAccNo: "123123", //券商真实账号，
+        tradeSubAccNo: "1313131", //子账号，
+        tradeSubAccName: "测试策略", //子账户名称
+        remark: "备注", //
+        buyStrategy: "买入策略。。。", //买入策略
+        sell_strategy: "卖出策略。。。。", //卖出策略
+        openDate: "开户日期", //开户日期
+        strategyPlan: "策略方案", //策略方案
+        status: "0" //0未启用，A已启用，D暂停使用，C关闭，不再启用
+      }, {
+        subAccIdn: "01s3s2r", //主键，
+        tradeAccNo: "123123", //券商真实账号，
+        tradeSubAccNo: "1313131", //子账号，
+        tradeSubAccName: "测试策略", //子账户名称
+        remark: "备注", //
+        buyStrategy: "买入策略。。。", //买入策略
+        sell_strategy: "卖出策略。。。。", //卖出策略
+        openDate: "开户日期", //开户日期
+        strategyPlan: "策略方案", //策略方案
+        status: "0" //0未启用，A已启用，D暂停使用，C关闭，不再启用
+      }, {
+        subAccIdn: "01s3s2r", //主键，
+        tradeAccNo: "123123", //券商真实账号，
+        tradeSubAccNo: "1313131", //子账号，
+        tradeSubAccName: "测试策略", //子账户名称
+        remark: "备注", //
+        buyStrategy: "买入策略。。。", //买入策略
+        sell_strategy: "卖出策略。。。。", //卖出策略
+        openDate: "开户日期", //开户日期
+        strategyPlan: "策略方案", //策略方案
+        status: "0" //0未启用，A已启用，D暂停使用，C关闭，不再启用
+      }] };
 
   },
   components: {
@@ -106,20 +159,31 @@
     this.userNiuRen = false;
   },
   methods: {
+    withdraw: function withdraw() {
+      console.log("withdraw", " at pages\\trade\\trade.vue:153");
+    },
     choose1: function choose1() {
-      console.log(1, " at pages\\trade\\trade.vue:100");
+      console.log(1, " at pages\\trade\\trade.vue:156");
     },
     choose2: function choose2() {
-      console.log("choose2", " at pages\\trade\\trade.vue:103");
+      console.log("choose2", " at pages\\trade\\trade.vue:159");
     },
     choose3: function choose3() {
-      console.log("choose3", " at pages\\trade\\trade.vue:106");
+      console.log("choose3", " at pages\\trade\\trade.vue:162");
     },
     handleTrade: function handleTrade(res) {
-      console.log(res, " at pages\\trade\\trade.vue:109");
+      console.log(res, " at pages\\trade\\trade.vue:165");
       var tab = res.currentTarget.dataset.tab;
       uni.navigateTo({
         url: "handleTrade/handleTrade?tab=" + tab });
+
+    },
+    tapswitch: function tapswitch() {
+      uni.navigateTo({
+        url: '../accounts/accounts',
+        success: function success(res) {},
+        fail: function fail() {},
+        complete: function complete() {} });
 
     } } };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-app-plus/dist/index.js */ "./node_modules/@dcloudio/uni-app-plus/dist/index.js")["default"]))

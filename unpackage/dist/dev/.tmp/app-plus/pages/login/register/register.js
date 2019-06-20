@@ -91,11 +91,6 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 //
 //
 //
-//
-//
-//
-//
-//
 var _default =
 {
   data: function data() {
@@ -123,6 +118,10 @@ var _default =
         clearInterval(interval);
       }, 5010);
 
+    },
+
+    regi: function regi() {
+      console.log("www", " at pages\\login\\register\\register.vue:114");
     } } };exports.default = _default;
 
 /***/ }),
