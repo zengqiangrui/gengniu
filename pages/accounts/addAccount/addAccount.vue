@@ -44,7 +44,7 @@
 		},
 		methods: {
 			add:function(){
-				uni.navigateTo({
+				uni.navigateBack()({
 					url: '../accounts',
 					success: res => {},
 					fail: () => {},
