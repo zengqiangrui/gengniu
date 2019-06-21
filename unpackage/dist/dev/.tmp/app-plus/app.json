@@ -1,6 +1,5 @@
 {
   "pages": [
-<<<<<<< HEAD
     "pages/table/table",
     "pages/login/register/register",
     "pages/trade/trade",
@@ -13,15 +12,6 @@
     "pages/login/pwd/pwd",
     "pages/accounts/accounts",
     "pages/accounts/addAccount/addAccount"
-=======
-    "pages/trade/trade",
-    "pages/login/login/login",
-    "pages/login/register/register",
-    "pages/trade/handleTrade/handleTrade",
-    "pages/rank/rank",
-    "pages/person/person",
-    "pages/index/index"
->>>>>>> 38a04e94ab94e4bc9b380568918f3f59d077c73f
   ],
   "subPackages": [],
   "window": {
@@ -36,6 +26,12 @@
     "borderStyle": "black",
     "backgroundColor": "darkgrey",
     "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "static/icons/index.png",
+        "selectedIconPath": "static/icons/index-gold.png",
+        "text": "首页"
+      },
       {
         "pagePath": "pages/rank/rank",
         "iconPath": "static/icons/rank.png",

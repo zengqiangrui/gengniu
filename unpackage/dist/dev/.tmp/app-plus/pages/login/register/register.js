@@ -181,11 +181,6 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 //
 //
 //
-//
-//
-//
-//
-//
 var _default =
 {
   data: function data() {
@@ -216,7 +211,11 @@ var _default =
     },
 
     regi: function regi() {
+<<<<<<< HEAD
+      console.log("www", " at pages\\login\\register\\register.vue:114");
+=======
       console.log("www", " at pages\\login\\register\\register.vue:119");
+>>>>>>> 13af2116f1c4f6feb7631f1a36872f6d6c4108ae
     } } };exports.default = _default;
 
 /***/ }),

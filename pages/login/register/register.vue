@@ -78,13 +78,8 @@
 			<button class="login" @tap="regi">立即注册</button>
 		</view>
 
-
-
 	</view>
 </template>
-
-
-
 
 <script>
 	export default {

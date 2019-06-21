@@ -1,7 +1,7 @@
 <template>
 	<view v-if="userNiuRen" class="content">
-		<uni-list >
-			<uni-list-item @tap="tapswitch" title="长城证券" note="点击切换主账户"  thumb="/static/icons/greatwall.jpg" ></uni-list-item>
+		<uni-list>
+			<uni-list-item @tap="tapswitch" title="长城证券" note="点击切换主账户" thumb="/static/icons/greatwall.jpg"></uni-list-item>
 		</uni-list>
 
 		<view class="assetArea">
@@ -52,25 +52,33 @@
 
 	<view v-else>
 		<view class="container">
-			<view class="accountArea-left">
-				<view v-for="(item,index) in left" class="subAccountArea">
-					{{item}}
-					<view class="">
-
+			<view class="accountArea">
+				<view v-for="(item,index) in data" class="subAccountArea">
+					<view class="s-head">
+						<image style="width: 50upx; height: 50upx;" src="/static/icons/greatwall.jpg" mode="scaleToFill"></image>
+						<text>我的策略{{item}}</text>
 					</view>
-
+					<view class="account-handle">
+						<button>启用</button>
+						<button>暂停</button>
+						<button>关闭</button>
+					</view>
+					
 				</view>
 			</view>
-			<view class="accountArea-right">
+			<!-- <view class="accountArea-right">
 				<view v-for="(item,index) in right" class="subAccountArea">
-					{{item}}
+					<view class="s-head">
+						<image style="width: 50upx; height: 50upx;" src="/static/icons/greatwall.jpg" mode="scaleToFill"></image>
+						<text>我的策略{{item}}</text>
+					</view>
 				</view>
-			</view>
+			</view> -->
 		</view>
 
 		<view class="common-handle">
-			<button type="primary" class="common-btn">批量撤销</button>
-			<button type="primary" class="common-btn">批量启用</button>
+			<button class="common-btn" @tap="withdraw" style="background-color: #DCB736;color: white;">批量撤销</button>
+			<button class="common-btn" style="background-color: #DCB736;color: white;">批量启用</button>
 		</view>
 	</view>
 </template>
@@ -79,12 +87,57 @@
 	import uniIcon from "@dcloudio/uni-ui/lib/uni-icon/uni-icon.vue"
 	import uniList from '@dcloudio/uni-ui/lib/uni-list/uni-list.vue'
 	import uniListItem from '@dcloudio/uni-ui/lib/uni-list-item/uni-list-item.vue'
+	
 	export default {
 		data() {
 			return {
 				userNiuRen: false,
-				left: [1, 3, 5, 7, 9],
-				right: [2, 4, 6, 8, 10],
+				data:[1,2,3,4,5,6,7,8,9,0],
+				subAccountData:[{
+					subAccIdn:"01s3s2r",//主键，
+					tradeAccNo:"123123",//券商真实账号，
+					tradeSubAccNo:"1313131",//子账号，
+					tradeSubAccName:"测试策略",//子账户名称
+					remark:"备注",//
+					buyStrategy:"买入策略。。。",//买入策略
+					sell_strategy:"卖出策略。。。。",//卖出策略
+					openDate:"开户日期",//开户日期
+					strategyPlan:"策略方案",//策略方案
+					status:"0"//0未启用，A已启用，D暂停使用，C关闭，不再启用
+				},{
+					subAccIdn:"01s3s2r",//主键，
+					tradeAccNo:"123123",//券商真实账号，
+					tradeSubAccNo:"1313131",//子账号，
+					tradeSubAccName:"测试策略",//子账户名称
+					remark:"备注",//
+					buyStrategy:"买入策略。。。",//买入策略
+					sell_strategy:"卖出策略。。。。",//卖出策略
+					openDate:"开户日期",//开户日期
+					strategyPlan:"策略方案",//策略方案
+					status:"0"//0未启用，A已启用，D暂停使用，C关闭，不再启用
+				},{
+					subAccIdn:"01s3s2r",//主键，
+					tradeAccNo:"123123",//券商真实账号，
+					tradeSubAccNo:"1313131",//子账号，
+					tradeSubAccName:"测试策略",//子账户名称
+					remark:"备注",//
+					buyStrategy:"买入策略。。。",//买入策略
+					sell_strategy:"卖出策略。。。。",//卖出策略
+					openDate:"开户日期",//开户日期
+					strategyPlan:"策略方案",//策略方案
+					status:"0"//0未启用，A已启用，D暂停使用，C关闭，不再启用
+				},{
+					subAccIdn:"01s3s2r",//主键，
+					tradeAccNo:"123123",//券商真实账号，
+					tradeSubAccNo:"1313131",//子账号，
+					tradeSubAccName:"测试策略",//子账户名称
+					remark:"备注",//
+					buyStrategy:"买入策略。。。",//买入策略
+					sell_strategy:"卖出策略。。。。",//卖出策略
+					openDate:"开户日期",//开户日期
+					strategyPlan:"策略方案",//策略方案
+					status:"0"//0未启用，A已启用，D暂停使用，C关闭，不再启用
+				}],
 			}
 		},
 		components: {
@@ -96,6 +149,9 @@
 			this.userNiuRen = false
 		},
 		methods: {
+			withdraw:function(){
+				console.log("withdraw")
+			},
 			choose1: function() {
 				console.log(1)
 			},
@@ -112,7 +168,7 @@
 					url: "handleTrade/handleTrade?tab=" + tab
 				})
 			},
-			tapswitch:function(){
+			tapswitch: function() {
 				uni.navigateTo({
 					url: '../accounts/accounts',
 					success: res => {},
@@ -228,36 +284,56 @@
 		padding: 0;
 		margin: 0;
 		display: flex;
-
+		
 	}
 
-	.accountArea-left,
-	.accountArea-right {
-		width: 50%;
+	.accountArea {
 		display: flex;
 		flex-direction: column;
-		/* flex-wrap: wrap; */
 		align-items: center;
+		flex-direction: row;
+		flex-wrap: wrap;
 		justify-content: space-between;
 		box-sizing: border-box;
 		padding: 4upx;
 	}
 
 	.subAccountArea {
-		width: 98%;
+		width: 100%;
 		height: 240upx;
 		background: grey;
 		margin: 4upx 0upx;
 		padding: 4upx;
 	}
-	
-	.common-handle{
+
+	.common-handle {
 		display: flex;
 		flex-direction: row;
 	}
-	
-	.common-btn{
+
+	.common-btn {
 		width: 100%;
-		background: #DCB736;
+		background-color: #DCB736;
+	}
+	
+	.s-head{
+		display: flex;
+		align-items: center;
+		font-size: 24upx;
+	}
+	
+	.account-handle{
+		width: 100%;
+		height: 100upx;
+		display: flex;
+		align-items: center;
+	}
+	
+	.account-handle button{
+		font-size: 28upx;
+		width: 180upx;
+		text-align: center;
+		line-height: 60upx;
+		height: 60upx;
 	}
 </style>

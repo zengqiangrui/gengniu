@@ -10,7 +10,6 @@
 		{
 		    "path" : "pages/table/table",
 		    "style" : {}
-
 		},
 		{
 			"path": "pages/login/register/register",
@@ -68,15 +67,34 @@
 			"path": "pages/accounts/addAccount/addAccount",
 			"style": {}
 		}
+	    ,{
+            "path" : "pages/test/test",
+            "style" : {}
+        }
+    ],
 
-	],
-
+        }
+        ,{
+            "path" : "pages/accounts/accounts",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/accounts/addAccount/addAccount",
+            "style" : {}
+        }
+   
+    ],
 	"tabBar": {
 		"color": "#222",
 		"selectedColor": "#dcb736",
 		"borderStyle": "black",
 		"backgroundColor": "darkgrey",
 		"list": [{
+			"pagePath": "pages/index/index",
+			"iconPath": "static/icons/index.png",
+			"selectedIconPath": "static/icons/index-gold.png",
+			"text": "首页"
+		},{
 			"pagePath": "pages/rank/rank",
 			"iconPath": "static/icons/rank.png",
 			"selectedIconPath": "static/icons/rank-gold.png",
