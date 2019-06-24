@@ -20,6 +20,7 @@
   "dependencies": {
     "@dcloudio/uni-ui": "0.0.8",
     "chart": "^2.8.0",
-    "echarts": "^4.2.1"
+    "echarts": "^4.2.1",
+    "fs-extra": "^8.0.1"
   }
 }

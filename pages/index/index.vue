@@ -63,7 +63,10 @@
 </template>
 
 <script>
-	import echarts from 'echarts'
+	// import echarts from 'echarts'
+	import echarts from 'echarts/dist/echarts.simple.min.js'
+	import pie from 'echarts/src/chart/pie.js'
+	import bar from 'echarts/src/chart/bar.js'
 	export default {
 		name: 'hello',
 		data() {

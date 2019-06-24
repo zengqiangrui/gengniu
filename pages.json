@@ -71,17 +71,7 @@
             "path" : "pages/test/test",
             "style" : {}
         }
-    ],
-
-        }
-        ,{
-            "path" : "pages/accounts/accounts",
-            "style" : {}
-        }
-        ,{
-            "path" : "pages/accounts/addAccount/addAccount",
-            "style" : {}
-        }
+ 
    
     ],
 	"tabBar": {
