@@ -19,6 +19,7 @@
   "homepage": "https://github.com/zengqiangrui/gengniu#readme",
   "dependencies": {
     "@dcloudio/uni-ui": "0.0.8",
-    "echarts": "^4.2.1"
+    "echarts": "^4.2.1",
+		"t-table":"0.0.1"
   }
 }

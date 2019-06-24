@@ -1,7 +1,6 @@
 <template>
 	<view>
 		<button class="choose" @tap="showPopup"> 选择牛人</button>
-		<view>dfghjklxdcfghvjkl;zsdxcfgvhbjnkml;dfcgvhbjkl;xnkml,;</view>
 	
 		<!-- 弹出层 -->
 		<view class="popup" v-if="isShow">
@@ -21,7 +20,7 @@
 						</t-tr>
 						<t-tr v-for="items in niuren" :key="items.id">
 							<t-td>
-									<checkbox style="transform:scale(0.5)" ></checkbox>
+								<checkbox style="transform:scale(0.5)" ></checkbox>
 							</t-td>
 							<t-td>{{items.name}}</t-td>
 							<t-td>{{items.paiming}}</t-td>
@@ -40,8 +39,7 @@
 		</view>
 
 		<!-- 做黑色阴影颜色 -->
-		<view class="uni-mask" v-if="isShow">
-		</view>
+		<view class="uni-mask" v-if="isShow"></view>
 
 	</view>
 </template>
@@ -66,13 +64,6 @@
 			return {
 				isShow: false,
 				niuren:
-					// {
-					// 		name: '王小二',
-					// 		paiming:'1',
-					// 		shouyilv:'98.5%',
-					// 		huiche:'5%',
-					// 		shenglv:'65.5%'				
-					// }
 					[{
 						name: '王小二',
 						paiming: '1',
